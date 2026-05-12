@@ -9,7 +9,7 @@ document.getElementById("enquiryForm").addEventListener("submit", function (e) {
     message: document.getElementById("message").value,
   };
 
-  fetch("http://localhost:5000/api/enquiry", {
+fetch("https://krishna-backend-41jq.onrender.com/api/enquiry", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
