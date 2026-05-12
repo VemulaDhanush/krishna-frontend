@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header small">
+  <h1>Contact / Enquiry</h1>
+</header>
+
+<form id="enquiryForm" class="contact-form">
+  <p id="successMsg" class="success-message" style="display:none;"></p>
+
+  <input type="text" id="name" placeholder="Name" required>
+  <input type="tel" id="phone" placeholder="Phone" required>
+ <select id="location" required>
+<option value="">Select Location</option>
+
+<option>Patancheru</option>
+<option>Lingampally</option>
+<option>Miyapur</option>
+<option>Kukatpally</option>
+<option>Bachupally</option>
+<option>Chandanagar</option>
+<option>Hitech City</option>
+<option>Gachibowli</option>
+<option>Madhapur</option>
+<option>Kondapur</option>
+<option>Ameerpet</option>
+<option>SR Nagar</option>
+<option>Begumpet</option>
+<option>Secunderabad</option>
+<option>LB Nagar</option>
+<option>Uppal</option>
+<option>Dilsukhnagar</option>
+<option>BN Reddy</option>
+<option>Injapur</option>
+<option>Ibrahimpatnam</option>
+
+</select>
+
+  <select id="service" required>
+    <option value="">Select Service</option>
+    <option>Interior Painting</option>
+    <option>Exterior Painting</option>
+    <option>Waterproofing</option>
+     <option>Whole Building</option>
+     <option>Others</option>
+  </select>
+
+  <textarea id="message" placeholder="Message"></textarea>
+  <button type="submit">Book Slot</button>
+</form>
+
+<p id="successMsg" class="success-message" style="display:none;"></p>
+<script src="contact.js"></script>
+</body>
+</html>

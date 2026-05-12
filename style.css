@@ -1,0 +1,1698 @@
+/* Reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  margin:0;
+}
+
+/* ================= NAVBAR ================= */
+
+
+/* ================= COLORFUL NAVBAR ================= */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    /* స్టైలిష్ గ్రేడియంట్ బ్యాక్‌గ్రౌండ్ */
+    background: linear-gradient(90deg, #222 0%, #333 100%);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 12px;
+    padding: 10px 20px;
+    border-radius: 50px; /* పిల్ షేప్ */
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid transparent;
+}
+
+/* ఒక్కో బటన్‌కి ఒక్కో కలర్ హోవర్ ఎఫెక్ట్ */
+
+/* Home - Orange */
+.navbar a:nth-child(1):hover {
+    background: #f39c12;
+    box-shadow: 0 0 15px rgba(243, 156, 18, 0.6);
+}
+
+/* Services - Blue */
+.navbar a:nth-child(2):hover {
+    background: #3498db;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.6);
+}
+
+/* Certificates - Green */
+.navbar a:nth-child(3):hover {
+    background: #2ecc71;
+    box-shadow: 0 0 15px rgba(46, 204, 113, 0.6);
+}
+
+/* Contact - Purple */
+.navbar a:nth-child(4):hover {
+    background: #9b59b6;
+    box-shadow: 0 0 15px rgba(155, 89, 182, 0.6);
+}
+
+/* Contact - Purple */
+.navbar a:nth-child(5):hover {
+    background: #40e66c;
+    box-shadow: 0 0 15px rgba(24, 239, 139, 0.6);
+}
+
+
+/* Active State - ప్రస్తుతం ఉన్న పేజీ ఆరెంజ్‌లో ఉంటుంది */
+.navbar a.active {
+    background: #f39c12;
+    color: #fff;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .navbar a {
+        font-size: 12px;
+        margin: 5px;
+        padding: 8px 12px;
+    }
+}
+
+/* ================= HEADER ================= */
+
+/* Header Styling */
+.header {
+    background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
+    padding: 80px 20px;
+    overflow: hidden;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Text Side */
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.badge {
+    background: #fff0d1;
+    color: #d4a017;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.business-name {
+    font-size: 48px;
+    color: #222;
+    margin: 10px 0;
+    font-weight: 800;
+}
+
+.business-title {
+    font-size: 24px;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #555;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.tagline-te {
+    font-size: 1.3rem; /* తెలుగు కొంచెం పెద్దగా ఉంటే బాగుంటుంది */
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* Buttons */
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.primary-btn {
+    background: #222;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background: #f39c12;
+    transform: translateY(-3px);
+}
+
+/* ================= WHATSAPP BUTTON STYLE ================= */
+.whatsapp-btn {
+    background: #25d366; /* వాట్సాప్ బ్రాండ్ గ్రీన్ */
+    color: #fff !important; /* టెక్స్ట్ వైట్ గా ఉండటానికి */
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); /* లేత ఆకుపచ్చ నీడ */
+}
+
+/* మౌస్ పెట్టినప్పుడు వచ్చే ఎఫెక్ట్ */
+.whatsapp-btn:hover {
+    background: #128c7e; /* కొంచెం డార్క్ గ్రీన్ */
+    transform: translateY(-3px); /* కొంచెం పైకి లేస్తుంది */
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5); /* నీడ పెరుగుతుంది */
+}
+
+/* వాట్సాప్ ఐకాన్ కొంచెం షేక్ అయ్యేలా చిన్న యానిమేషన్ */
+.whatsapp-btn i {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover i {
+    transform: rotate(15deg) scale(1.2); /* మౌస్ పెడితే ఐకాన్ వంగుతుంది */
+}
+
+/* బటన్ కి చిన్న గ్లో యానిమేషన్ (Optional - ఇంకా వెరైటీగా ఉండటానికి) */
+.whatsapp-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.whatsapp-btn::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+.whatsapp-btn:hover::after {
+    left: 120%;
+}
+
+/* ================= CALL BUTTON STYLE ================= */
+.call-btn {
+    background: #007bff; /* ప్రొఫెషనల్ బ్లూ కలర్ */
+    color: #fff !important;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.call-btn:hover {
+    background: #0056b3; /* డార్క్ బ్లూ ఆన్ హోవర్ */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.5);
+}
+
+/* బటన్లు అన్నీ ఒకే వరుసలో ఉండటానికి */
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* మొబైల్ లో బటన్లు వెడల్పుగా కనిపించడానికి */
+@media (max-width: 600px) {
+    .cta-buttons {
+        flex-direction: column;
+    }
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+/* Image Side */
+.hero-image {
+    flex: 1;
+    position: relative;
+    text-align: center;
+    min-width: 300px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+
+/* Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .business-name { font-size: 36px; }
+    .hero-content { text-align: center; }
+    .cta-buttons { justify-content: center; }
+}
+
+
+
+
+
+
+
+
+/* ================= HERO IMAGE ================= */
+
+.hero-container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:40px;
+  padding:40px;
+  flex-wrap:wrap;
+}
+
+.hero-image img{
+  width:500px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.hero-image img:hover{
+  transform:scale(1.05);
+  transition:0.3s;
+}
+
+.hero-text{
+  max-width:400px;
+}
+
+/* ================= SERVICES ================= */
+/* ================= SERVICES PAGE STYLING ================= */
+
+/* Header Style (Home Page కి సింక్ అయ్యేలా) */
+.header.small {
+    background: linear-gradient(135deg, #222 0%, #444 100%);
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+    border-bottom: 5px solid #f39c12;
+}
+
+.header.small h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.header.small p {
+    color: #f39c12;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Services Grid */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Service Card Style */
+.service-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden; /* ఇమేజ్ బయటికి రాకుండా */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+    text-align: center;
+    border: 1px solid #eee;
+    padding-bottom: 25px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(243, 156, 18, 0.15);
+    border-color: #f39c12;
+}
+
+/* Image Styling */
+.service-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* ఇమేజ్ సాగకుండా నీట్‌గా సెట్ అవుతుంది */
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover img {
+    transform: scale(1.1); /* మౌస్ పెడితే ఇమేజ్ జూమ్ అవుతుంది */
+}
+
+/* Card Text Styling */
+.service-card h3 {
+    margin: 20px 0 10px;
+    font-size: 1.4rem;
+    color: #222;
+}
+
+.service-card p {
+    padding: 0 20px;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Footer Style */
+.footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+/* మొబైల్ ఫోన్ల కోసం */
+@media (max-width: 768px) {
+    .services {
+        grid-template-columns: 1fr; /* ఫోన్లో ఒకదాని కింద ఒకటి */
+    }
+}
+
+
+
+
+
+
+/* ================= CONTACT FORM ================= */
+
+
+/* ================= CONTACT PAGE STYLING ================= */
+
+/* చిన్న హెడర్ కోసం */
+.header.small {
+    background: linear-gradient(135deg, #222 0%, #444 100%);
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+    border-bottom: 5px solid #f39c12;
+    margin-bottom: 40px;
+}
+
+.header.small h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* కాంటాక్ట్ ఫామ్ కంటైనర్ */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto 60px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ఇన్‌పుట్ ఫీల్డ్స్ మరియు సెలెక్ట్ బాక్సులు */
+.contact-form input, 
+.contact-form select, 
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    outline: none;
+    background: #f9f9f9;
+}
+
+/* క్లిక్ చేసినప్పుడు బోర్డర్ కలర్ మారడానికి */
+.contact-form input:focus, 
+.contact-form select:focus, 
+.contact-form textarea:focus {
+    border-color: #f39c12;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(243, 156, 18, 0.1);
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* సబ్మిట్ బటన్ స్టైల్ */
+.contact-form button {
+    background: #10ef74;
+    color: #fff;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background: #222;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* మొబైల్ ఫోన్ల కోసం */
+@media (max-width: 600px) {
+    .contact-form {
+        margin: 20px;
+        padding: 25px;
+    }
+}
+
+/* ================= MARQUEE ================= */
+
+.marquee-text{
+  background:#ffcc00;
+  color:#000;
+  padding:10px;
+  font-weight:bold;
+  font-size:18px;
+}
+
+/* ================= MODAL ================= */
+
+
+/* ================= FOOTER ================= */
+
+
+
+
+
+/* BRANDS */
+
+/* ================= BRANDS SECTION ================= */
+.brands {
+    padding: 60px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.brands h2 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+/* టైటిల్ కింద ఒక చిన్న రంగుల లైన్ */
+.brands h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(90deg, #f39c12, #3498db);
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+
+.brand-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* లోగోల మధ్య దూరం */
+    flex-wrap: wrap; /* ఫోన్లలో ఒకదాని కింద ఒకటి రావడానికి */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.brand-logos img {
+    width: 150px; /* లోగోల వెడల్పు */
+    height: auto;
+    max-height: 80px; /* ఎత్తు మరీ ఎక్కువ కాకుండా */
+    object-fit: contain;
+    /* మొదట కొంచెం గ్రే కలర్ లో ఉండి మౌస్ పెడితే కలర్ వచ్చేలా చేయొచ్చు (Optional) */
+    
+    opacity: 0.8;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+/* మౌస్ పెట్టినప్పుడు లోగో ఒరిజినల్ కలర్ లోకి మారి మెరుస్తుంది */
+.brand-logos img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.15); /* కొంచెం పెద్దదవుతుంది */
+}
+
+/* మొబైల్ ఫోన్ల కోసం అడ్జస్ట్‌మెంట్ */
+@media (max-width: 768px) {
+    .brand-logos {
+        gap: 30px;
+    }
+    .brand-logos img {
+        width: 100px;
+    }
+}
+
+
+/* ================= SERVICES SECTION ================= */
+/* ================= WHY US (Colorful & Vibrant) ================= */
+.why-us {
+    padding: 100px 0;
+    /* ఒక లైట్ అండ్ బ్రైట్ గ్రేడియంట్ బ్యాక్‌గ్రౌండ్ */
+    background: linear-gradient(135deg, #fff9f0 0%, #ffffff 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* వెనుక చిన్న డెకరేటివ్ కలర్ సర్కిల్స్ (Variety కోసం) */
+.why-us::before {
+    content: '';
+    position: absolute;
+    top: -50px; right: -50px;
+    width: 200px; height: 200px;
+    background: rgba(243, 156, 18, 0.05);
+    border-radius: 50%;
+}
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.features-list li {
+    background: #ffffff;
+    padding: 20px 35px;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #333;
+    /* ఒక్కో బాక్స్‌కి ఒక్కో కలర్ బోర్డర్ వచ్చేలా సెట్ చేద్దాం */
+    border-left: 6px solid #f39c12; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ఒక్కో బాక్స్‌కి వేర్వేరు రంగులు ఇచ్చి కలర్‌ఫుల్‌గా మారుద్దాం */
+.features-list li:nth-child(1) { border-left-color: #f39c12; } /* Orange */
+.features-list li:nth-child(2) { border-left-color: #3498db; } /* Blue */
+.features-list li:nth-child(3) { border-left-color: #2ecc71; } /* Green */
+.features-list li:nth-child(4) { border-left-color: #9b59b6; } /* Purple */
+
+.features-list li:hover {
+    transform: scale(1.08) translateY(-5px);
+    background: #fff;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* హోవర్‌లో టెక్స్ట్ కలర్ కూడా మారేలా (Optional) */
+.features-list li:hover {
+    color: #000;
+}
+
+/* ================= FOOTER STYLE ================= */
+.main-footer {
+    background: #222; /* డార్క్ బ్యాక్‌గ్రౌండ్ ఇస్తే పైన ఉన్న కలర్స్‌కి బ్యాలెన్స్ అవుతుంది */
+    color: #fff;
+    padding: 60px 0 20px;
+    margin-top: 50px;
+    border-top: 5px solid #f39c12; /* పైన ఆరెంజ్ బోర్డర్ */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-about, .footer-contact, .footer-social {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-about h3, .footer-contact h4, .footer-social h4 {
+    color: #f39c12;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.footer-contact p, .footer-about p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-contact a:hover {
+    color: #f39c12;
+}
+
+.social-links a {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    border: 1px solid #444;
+}
+
+.social-links a:hover {
+    background: #f39c12;
+    border-color: #f39c12;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center; /* ఇది టెక్స్ట్‌ని సెంటర్‌లోకి తెస్తుంది */
+    padding: 25px 0;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* పైన ఒక లేత గీత */
+    width: 100%;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.footer-bottom strong {
+    color: #f39c12; /* నీ పేరు హైలైట్ అవ్వడానికి ఆరెంజ్ కలర్ */
+    font-weight: 600;
+}
+
+.tagline-te {
+    font-size: 1.3rem; /* తెలుగు కొంచెం పెద్దగా ఉంటే బాగుంటుంది */
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+/* ================= certificates================= */
+/* ================= CERTIFICATES PAGE ================= */
+
+/* Header Style */
+.header.small {
+    background: linear-gradient(135deg, #222 0%, #444 100%);
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+    border-bottom: 5px solid #f39c12;
+    margin-bottom: 40px;
+}
+
+/* Certificates Grid Section */
+.certificates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Certificate Image Style */
+/* ================= CERTIFICATES (Simple Style) ================= */
+
+/* ================= CERTIFICATES (Simple & Clean) ================= */
+
+.certificates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.cert-img {
+    width: 400px; /* వెడల్పు */
+    height: 320px; /* ఎత్తు */
+    object-fit: contain; /* ఇమేజ్ కట్ అవ్వకుండా పూర్తి బొమ్మ కనిపిస్తుంది */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+    background: #f9f9f9;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cert-img:hover {
+    border-color: #f39c12;
+    transform: scale(1.05);
+}
+
+/* Modal లో ఇమేజ్ ఫుల్ గా కనిపించడానికి */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: auto;
+    max-width: 90%;
+    max-height: 80vh; /* స్క్రీన్ ఎత్తులో 80% మాత్రమే */
+    object-fit: contain;
+    border: 5px solid #fff;
+}
+
+/* ================= ABOUT PAGE CSS ================= */
+
+/* About Hero */
+.about-hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Images/painting-header.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.about-hero h1 { font-size: 3rem; margin-bottom: 10px; color: #f39c12; }
+
+/* About Grid */
+.about-grid {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 20px;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 20px 20px 0px #f39c12; /* Artistic shadow */
+}
+
+
+.about-text { flex: 1.5; min-width: 300px; }
+
+.about-text h2 { font-size: 2.5rem; margin-bottom: 5px; color: #222; }
+.sub-title { color: #f39c12; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+
+.te-text { font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 15px; border-left: 4px solid #f39c12; padding-left: 15px; }
+.en-text { font-size: 1rem; color: #777; font-style: italic; margin-bottom: 30px; }
+
+/* Stats */
+.stats-grid { display: flex; gap: 30px; }
+.stat-item h3 { font-size: 2rem; color: #222; margin-bottom: 0; }
+.stat-item p { color: #f39c12; font-weight: bold; }
+
+/* Values Section */
+.values-section { background: #fdf7e9; padding: 80px 20px; text-align: center; }
+.values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
+
+.value-card {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+    border-bottom: 5px solid transparent;
+}
+
+.value-card:hover { transform: translateY(-10px); border-bottom-color: #f39c12; box-shadow: 0 15px 30px rgba(0,0,0,0.05); }
+.value-card i { font-size: 40px; color: #f39c12; margin-bottom: 20px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-hero h1 { font-size: 2rem; }
+    .about-grid { flex-direction: column; text-align: center; }
+    .te-text { border-left: none; padding-left: 0; }
+}
+
+
+/* ================= GALLERY PAGE CSS ================= */
+
+/* Gallery Hero Header */
+.gallery-hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 5px solid #f39c12;
+}
+
+.gallery-hero h1 { font-size: 2.5rem; margin-bottom: 10px; color: #f39c12; }
+.gallery-hero p { font-size: 1rem; color: #ccc; }
+
+/* Gallery Grid */
+.gallery-section { padding: 60px 20px; background: #fff; }
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* ఫోన్ కి తగ్గట్టుగా అడ్జస్ట్ అవుతుంది */
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Gallery Item */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px; /* అన్ని ఫోటోలు ఒకే ఎత్తులో ఉండటానికి */
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+/* Hover Effect - మౌస్ పెడితే ఫోటో జూమ్ అవుతుంది */
+.gallery-item:hover img {
+    transform: scale(1.15);
+}
+
+/* Photo Overlay */
+.gallery-item .overlay {
+    position: absolute;
+    bottom: -100%; /* మొదట కింద దాక్కుంటుంది */
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(243, 156, 18, 0.9); /* ఆరెంజ్ బ్యాక్‌గ్రౌండ్ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+/* Hover Effect - మౌస్ పెడితే ఓవర్లే పైకి వస్తుంది */
+.gallery-item:hover .overlay {
+    bottom: 0;
+}
+
+.gallery-item .overlay span {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .gallery-hero h1 { font-size: 2rem; }
+    .gallery-grid { gap: 15px; }
+    .gallery-item img { height: 200px; }
+}
+
+/* ================= NEW: SCAN BOX & GALLERY CTA ONLY ================= */
+
+/* 1. Scan Us Box Style */
+.about-image {
+    position: relative;
+    display: inline-block; /* ఇమేజ్ సైజుకి తగ్గట్టు బాక్స్ ఉండటానికి */
+}
+
+
+
+
+
+
+/* 2. Gallery CTA Button Section */
+.gallery-cta {
+    background: #fff;
+    border: 2px solid #f1f1f1;
+    padding: 20px 25px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+    transition: all 0.3s ease;
+}
+
+.gallery-cta:hover {
+    border-color: #f39c12;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(243, 156, 18, 0.1);
+}
+
+.cta-info h3 {
+    margin: 0;
+    color: #222;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.cta-info p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.explore-btn {
+    background: #f39c12;
+    color: #fff !important;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background: #222;
+    color: #f39c12 !important;
+}
+
+.explore-btn i {
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.explore-btn:hover i {
+    transform: translateX(5px); /* ఆరో గుర్తు కదులుతుంది */
+}
+
+
+    
+    .gallery-cta {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+.gallery{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.gallery img{
+  width:200px;
+  height:200px;
+  object-fit:cover;
+  cursor:pointer;
+  border-radius:10px;
+}
+
+/* Modal */
+
+.modal{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+}
+
+.modal-content{
+  display:block;
+  margin:auto;
+  max-width:80%;
+  margin-top:5%;
+}
+
+.close{
+  position:absolute;
+  top:20px;
+  right:30px;
+  color:white;
+  font-size:30px;
+  cursor:pointer;
+}
+
+
+.page-header{
+text-align:center;
+padding:50px 20px;
+background:#f4b400;
+color:#000;
+}
+
+.membership-section{
+padding:50px 20px;
+background:#f9f9f9;
+}
+
+.membership-grid{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.member-card{
+background:#fff;
+padding:15px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+width:220px;
+text-align:center;
+}
+
+.member-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+cursor:pointer;
+}
+
+.member-card p{
+margin-top:10px;
+font-weight:bold;
+}
+.member-card img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.member-card{
+  background:#fff;
+  padding:15px;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  width:260px;
+  text-align:center;
+}
+
+.membership-grid{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+  padding:40px 20px;
+}
+.member-card img{
+  width:100%;
+  height:320px;
+  object-fit:contain;
+  background:#f5f5f5;
+  border-radius:10px;
+}
+
+
+.navbar a{
+  color:white;
+  
+  margin:0 15px;
+
+ 
+  transition:0.3s;
+  padding:8px 12px;
+
+}
+
+.navbar a:hover{
+  background:#f4b400;
+  color:#000;
+}
+
+.navbar a.active{
+  background:#f4b400;
+  color:#000;
+}
+
+/* PROFILE BOX CONTAINER */
+.profile-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 24px;
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto;
+    /* డబుల్ షాడో ఎఫెక్ట్ - డెప్త్ కోసం */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05), 0 20px 48px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0f0f0;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    z-index: 1;
+}
+
+/* హోవర్ ఎఫెక్ట్ - బాక్స్ కొంచెం వెడల్పుగా మారి షాడో పెరుగుతుంది */
+.profile-box:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+    border-color: #007bff;
+}
+
+/* హోవర్ చేసినప్పుడు పైన చిన్న బ్లూ బార్ రావడం కోసం */
+.profile-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    border-radius: 24px 24px 0 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.profile-box:hover::before {
+    opacity: 1;
+}
+
+/* TITLE STYLING */
+.profile-box h3 {
+    font-size: 1.6rem;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Verified బ్యాడ్జ్ ఐకాన్ యాడ్ చేయడం కోసం (Optional) */
+.profile-box h3::after {
+    content: '\f058'; /* FontAwesome Check Circle */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+/* DESCRIPTION TEXT */
+.profile-box p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* MODERN BUTTON STYLING */
+.profile-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 32px;
+    background: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.profile-btn:hover {
+    background: #0056b3;
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
+    gap: 18px; /* యానిమేషన్ లో బాణం గుర్తు కొంచెం పక్కకి జరుగుతుంది */
+}
+
+.profile-btn i {
+    transition: 0.3s;
+}
+
+/* SCAN BOX MAIN CONTAINER */
+/* SCAN BOX CONTAINER */
+.scan-box {
+    flex: 1;
+    max-width: 360px;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 30px;
+    text-align: center;
+    /* బాక్స్ కి డెప్త్ ఇచ్చే షాడో */
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08); 
+    border: 1px solid #f0f0f0;
+    margin: 20px auto;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+/* హోవర్ ఎఫెక్ట్ */
+.scan-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 70px rgba(0, 123, 255, 0.12);
+}
+
+/* QR WRAPPER (లేజర్ యానిమేషన్ కోసం) */
+.qr-wrapper {
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    border: 2px solid #f8f9fa;
+}
+
+.qr-image {
+    width: 220px;
+    height: 220px;
+    display: block;
+    border-radius: 12px;
+    /* QR స్పష్టత కోసం */
+    filter: contrast(1.1); 
+}
+
+/* SCANNING LINE (లేజర్ యానిమేషన్) */
+.qr-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: calc(100% - 30px);
+    height: 3px;
+    background: #007bff;
+    /* లేజర్ గ్లో ఎఫెక్ట్ */
+    box-shadow: 0 0 15px #007bff, 0 0 25px #007bff;
+    border-radius: 10px;
+    animation: laserMove 2.5s infinite ease-in-out;
+}
+
+@keyframes laserMove {
+    0%, 100% { top: 15px; opacity: 0; }
+    50% { top: calc(100% - 20px); opacity: 1; }
+}
+
+/* SCAN TEXT STYLING */
+.scan-text span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.scan-text small {
+    display: inline-block;
+    font-size: 0.95rem;
+    color: #007bff;
+    background: rgba(0, 123, 255, 0.08);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    border: 1px solid rgba(0, 123, 255, 0.1);
+}
+
+
+.member-card img{
+  width:100%;
+  height:320px;
+  object-fit:contain;
+  background:#fff;
+  border-radius:12px;
+  padding:5px;
+  border:3px solid #f4b400;
+  box-shadow:0 4px 12px rgba(0,0,0,0.15);
+  transition:0.3s;
+  cursor:pointer;
+}
+
+.member-card img:hover{
+  transform:scale(1.03);
+}
+
+
+.modal{
+  display:none;
+  position:fixed;
+  z-index:9999;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+}
+
+.close:hover{
+  color:#f4b400;
+}
+.modal-content{
+  display:block;
+  margin:auto;
+  margin-top:3%;
+  max-width:85%;
+  max-height:85%;
+  border-radius:10px;
+}
+
+.page-header{
+  background:#f4b400;
+  padding:35px 15px;
+  text-align:center;
+}
+
+.page-header h1{
+  font-size:30px;
+  margin-bottom:8px;
+  color:#000;
+}
+
+.page-header p{
+  font-size:16px;
+  color:#222;
+}
+
+.success-message{
+  display:none;
+  background:#28a745;
+  color:white;
+  padding:15px;
+  text-align:center;
+  font-size:18px;
+  font-weight:bold;
+  border-radius:8px;
+  margin-bottom:20px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+/* ACHIEVEMENTS SECTION STYLES */
+.achievements-section {
+    padding: 80px 0;
+    background-color: #fcfcfc;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-desc {
+    text-align: center;
+    color: #666;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+/* GRID SETUP */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* CARD DESIGN */
+.achievement-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+    transition: all 0.4s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0, 123, 255, 0.1);
+    border-color: #007bff;
+}
+
+/* IMAGE BOX */
+.award-img-box {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.zoom-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.achievement-card:hover .zoom-img {
+    transform: scale(1.1);
+}
+
+/* CONTENT STYLES */
+.achievement-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.achievement-content h3 {
+    font-size: 1.3rem;
+    color: #222;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.eng-text {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.tel-text {
+    font-size: 0.9rem;
+    color: #007bff;
+    background: #f0f7ff;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.achievement-card img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  object-position:center;
+  border-bottom:2px solid #f4b400;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.achievement-card img:hover{
+  transform:scale(1.03);
+}
+
+.second-img{
+  height:220px !important;
+  object-fit:contain !important;
+}
+
+.achievements-section{
+  padding:60px 20px;
+   background:#fdfdfd;
+}
+
+.modal{
+  display:none;
+  position:fixed;
+  z-index:9999;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+}
+
+.modal-content{
+  display:block;
+  margin:auto;
+  margin-top:3%;
+  max-width:85%;
+  max-height:85%;
+}
+
+.close{
+  position:absolute;
+  top:20px;
+  right:35px;
+  color:white;
+  font-size:45px;
+  cursor:pointer;
+}
+/* Header styling specifically for the Title */
+.section-title {
+    display: inline-block; /* Background title varake undడానికి */
+    font-size: 2.8rem;
+    padding: 10px 30px;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); 
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+/* Header background shape (Optional: Title venaka light shade kosam) */
+.container {
+    position: relative;
+}
+
+/* Title kinda line inka highlight cheyyadaniki */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #1a2a6c, #fdbb2d);
+    margin: 8px auto 0;
+    border-radius: 50px;
+}
+.profile-links{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-top:25px;
+}
+
+.profile-card{
+  flex:1;
+  min-width:220px;
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  text-decoration:none;
+  color:#111;
+  box-shadow:0 4px 12px rgba(0,0,0,0.12);
+  border-left:5px solid #f4b400;
+  transition:0.3s;
+}
+
+.profile-card:hover{
+  transform:translateY(-5px);
+  background:#fff8e1;
+}
+
+.profile-card h3{
+  font-size:24px;
+  margin-bottom:10px;
+}
+
+.profile-card span{
+  color:#f57c00;
+  font-weight:bold;
+}
+
+.social-links{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+
+.profile-btn{
+  background:#f4b400;
+  color:#111;
+  padding:10px 16px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.profile-btn:hover{
+  background:#fff;
+  color:#000;
+}
